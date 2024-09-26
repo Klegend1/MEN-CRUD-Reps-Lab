@@ -1,0 +1,43 @@
+Populate your express boilerplate. Commit.
+Make it render a page for “new”. Commit.
+Make a “create” route. Commit.
+Have the form on “new” page post to the “create” route. Commit.
+Connect express to mongo by installing and setting up mongoose. Commit once it logs a successful connection message. Commit.
+Create the schema and model for your thing that you are CRUDing. Commit.
+In the “create” route, use mongoose to add a document to your database (.create()) based on what is in req.body. Commit.
+The “create” route redirect to the index page after the document has been created. Commit.
+Make an “index” view which displays all the data created by the app so far. Commit.
+Give your app the ability to render a “show” page. Commit.
+Each item on the index page should link to the “show” page for that item. Commit.
+Add basic css styling to your page. Commit. (optional)
+Add a head and nav partials to all existing pages. Commit. (optional)
+
+
+
+🥉Bronze: Destroy
+Build steps
+Make a delete button on the “show” page. Commit.
+Make a “destroy” route for your primary resource. Commit.
+Have the delete button send a DELETE request to the server. (Hint: What middleware allows your delete button to make a delete request?) Commit.
+Make the “destroy” route that removes the item from the database. Commit.
+
+
+🥈Silver: Update
+Build steps
+Edit/Update:
+
+Make an “edit” route that renders an edit page with the data already in it for that item. Commit.
+Make a link to the “edit” route. Commit.
+Make an “update” route. Commit.
+Have the edit page form send a PUT request to the “update” route. Commit.
+Make the “update” route update the model in the database. Commit.
+Make the “update” route send a redirect to the index page after the model has been updated. Commit.
+
+
+🏅 Gold: 1:M Associations
+Before you begin - Review the reference lesson codebase and Canvas learning materials - determine how you will create an association, will you embedded documents or and ObjectId reference? Will you create a reference through some other field?
+
+Implement a second schema (and model). Commit.
+Create a “new” page for your second model or implement a form on the show page of your first resource. Commit.
+Build a “create” route for your second model (including routes + controller). Commit.
+Verify that the “one” model is storing a reference to your “many” resource, or the “many“ model is storing a reference to the “one” resource.

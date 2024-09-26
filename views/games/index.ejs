@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Index Page</title>
+</head>
+
+<body>
+    <h1><%= message %> - All Games</h1>
+    <ul>
+      <% games.forEach(game => { %>
+        <li><a href="/games/<%= game._id %>"><%= game.name %></a></li>
+      <% }); %>
+    </ul>
+
+    <a href="/">Go Back to Homepage</a> | <a href="/games/new">Add new game</a>
+  </body>
+  
+</html>

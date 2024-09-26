@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Edit Page</title>
+  </head>
+  <body>
+    <h1>Game Edit - <%= game.name %></h1>
+    <form method="POST" action="/games/<%=game._id%>?_method=PUT">
+      <div>
+        <label for="name">Game Name:</label>
+        <input type="text" name="name" id="name" value="<%= game.name %>" />
+      </div>
+      <div>
+        <label for="isReadyToEat">Ready to Play:</label>
+        <input type="checkbox" name="ReadyToPlay" id="ReadyToPlay" <%=
+        game.ReadyToPlay ? "checked" : "" %> />
+      </div>
+
+      <button type="submit">Edit Game</button>
+    </form>
+  </body>
+</html>
